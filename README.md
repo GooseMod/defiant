@@ -1,2 +1,2 @@
 # defiant
-Discord modding is dead.
+yesn't
