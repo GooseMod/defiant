@@ -108,8 +108,8 @@ for (const i of Object.keys(wpRequire.c)) {
 
   for (const k of [ 'Z', 'ZP' ]) {
     if (k in exports) {
-      Object.defineProperty(exports, 'default', { configurable: true, get() { return exports[k]; }, set(v) { console.log(k, v, exports); exports[k] = v; console.log(exports[k]); return v; }});
-      // exports.default = exports[k];
+      // Object.defineProperty(exports, 'default', { configurable: true, get() { return exports[k]; }, set(v) { console.log(k, v, exports); exports[k] = v; console.log(exports[k]); return v; }});
+      exports.default = exports[k];
       changes++;
       continue;
     }
